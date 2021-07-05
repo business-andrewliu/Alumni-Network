@@ -4,14 +4,13 @@ This network is designed to help alumni stay connected after graduation.
 # Alumni Career Community
 
 ## Why
-(Explains why, when and how this idea.  This is optional)
 
-Year 2020 is a magical year.  I graduated from UCSD ...in the mist of Covid. To keep growing career and learning,  I constructed this project and keeps working on it during spare time.  
+2020 was an eventful year. I graduated from UCSD in the mist of Covid-19. To keep my career growing and continue my learning, I constructed this project as a way to help my alumni network stay in touch using a few of the skills I learned this past year. 
 
 
 ## What
-(Explains what it does)
-The gist of this project is to build an alumni career development community, that connects alumni across industries. The services, after it's built, are for alumni's to join the community (insert employee, email, etc), search the alumni by industry, or by employer) and connect.
+
+The gist of this project is to build an alumni career development community, that connects alumni across different companies and industries. The services, after they are built, are intented to help alumni connect with a community (insert employee, email, etc), search the directory by employee, company, or industry and connect with each other.
 
 <!--Alumni Career Community (./Alumni%20Project-Context%20diagrams.png) -->
 
