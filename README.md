@@ -21,7 +21,7 @@ The app portal is deployed to public cloud. It is maintained by a site administr
 
 ## Solution Summary
 This portal app has the UI layer, service layer and the database layer.  
-![Alumni Career Community Context](Alumni%20Project-Context%20diagrams.png)
+![Alumni Career Community Context](Alumni%20Project.png)
 The UI portal is single page app to be built on JS framework.  
 The service layer are microservices that connects the UI with the databases. 
 
