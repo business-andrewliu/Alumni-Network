@@ -120,7 +120,7 @@ values
 ('Phillip', 'Lee', 'phillip.lee@yottabyteinc.com', 'Senior Programmer', '137500', '2005-09-14', 100004),
 ('Brenda', 'Nguyen', 'brenda.nguyen@securitiesinc.com', 'Junior Analyst', '53000', '2021-03-15', 100003) ;
 
-### Insert college_dml command into mySQL workbench.
+### Insert college_ddl command into mySQL workbench.
 create table college
 (college_id int(12) auto_increment, 
 college_name varchar(200), 
@@ -143,7 +143,7 @@ values
 ('University of California, Santa Barbara', 'Santa Barbara', 'CA'),
 ('University of California, Santa Cruz', 'Santa Cruz', 'CA');
 
-### Insert interests_dml command into mySQL workbench.
+### Insert interests_ddl command into mySQL workbench.
 create table interests
 (interest_id int(12) auto_increment, 
 interest_name varchar(200), 
@@ -152,7 +152,7 @@ primary key (interest_id),
 unique key (interest_name))
 ENGINE = InnoDB AUTO_INCREMENT=1001 DEFAULT CHARSET=utf8;
 
-### Insert alumni_dml command into mySQL workbench.
+### Insert alumni_ddl command into mySQL workbench.
 create table alumni
 (alumni_id int(12) auto_increment, 
 first_name varchar(50), 
@@ -167,7 +167,7 @@ constraint foreign key (interest_id) references interests (interest_id),
 constraint foreign key (college_id) references college (college_id))
 ENGINE = InnoDB AUTO_INCREMENT=1001 DEFAULT CHARSET=utf8;
 
-### Insert contact_dml command into mySQL workbench.
+### Insert contact_ddl command into mySQL workbench.
 create table contact
 (contact_id int(12) auto_increment,
 email varchar(200), 
@@ -178,7 +178,7 @@ primary key (contact_id),
 constraint foreign key (alumni_id) references alumni(alumni_id))
 ENGINE = InnoDB AUTO_INCREMENT=1001 DEFAULT CHARSET=utf8;
 
-### Insert alumni_employee_link_dml command into mySQL workbench.
+### Insert alumni_employee_link_ddl command into mySQL workbench.
 create table alumni_employee_link
 (alumni_id int(12),
 employee_id int(12), 
