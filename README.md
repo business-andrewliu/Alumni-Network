@@ -167,6 +167,18 @@ unique key (interest_name))
 ENGINE = InnoDB AUTO_INCREMENT=1001 DEFAULT CHARSET=utf8;
 ```
 
+### Input interests_ddl command into mySQL workbench.
+```
+insert into interests (interest_name, description)
+values
+('computer science', 'Java, C++, r, Python, SQL'),
+('engineering', 'designing and building technology'), 
+('business', 'financial, entrepreneurial, management'), 
+('medicine', 'healthcare, lifestyle'),
+('social science', 'psychology, sociology')
+('sciences', 'biology, chemistry, physics');
+```
+
 ### Input alumni_ddl command into mySQL workbench.
 ```
 create table alumni
