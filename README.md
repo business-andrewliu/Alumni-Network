@@ -29,7 +29,7 @@ The database design is the following.
 
 ## Implementation
 
-### Insert industry_ddl query into mySQL workbench.
+### Insert industry_ddl command into mySQL workbench.
 create table industry
 (industry_id int(12) auto_increment,
 industry_name varchar(200),
@@ -39,7 +39,7 @@ ENGINE = InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 alter table industry add unique key (industry_name) ;
 
 
-### Insert industry_dml query into mySQL workbench.
+### Insert industry_dml command into mySQL workbench.
 insert into industry (industry_name)
 values ('Aerospace'),
 ('Biotech'),
@@ -47,7 +47,7 @@ values ('Aerospace'),
 ('Health Care'),
 ('IT');
 
-### Insert company_ddl query into mySQL workbench.
+### Insert company_ddl command into mySQL workbench.
 create table company
 (company_id int(6) auto_increment,
 company_name varchar(200),
@@ -60,7 +60,7 @@ ENGINE = InnoDB AUTO_INCREMENT=100001 DEFAULT CHARSET=utf8;
 
 alter table company add unique key (company_name);
 
-### Insert company_dml query into mySQL workbench.
+### Insert company_dml command into mySQL workbench.
 insert into company (company_name, city, state, industry_id)
 values
 ('Airspace Corp', 'Austin', 'TX', 1),
@@ -74,7 +74,7 @@ values
 ('Satellites Corp', 'Houston', 'TX', 1),
 ('DNA Inc', 'San Diego', 'CA', 2);
 
-### Insert employee_ddl query into mySQL workbench.
+### Insert employee_ddl command into mySQL workbench.
 create table employee
 (employee_id int(10) auto_increment,
 first_name varchar(200),
@@ -91,7 +91,7 @@ constraint foreign key (company_id) references company (company_id),
 constraint foreign key (manager_id) references employee (employee_id))
 ENGINE = InnoDB AUTO_INCREMENT=1000000001 DEFAULT CHARSET=utf8;
 
-### Insert employee_dml query into mySQL workbench.
+### Insert employee_dml command into mySQL workbench.
 insert into employee (first_name, last_name, email, title, salary, date_of_hire, company_id)
 values
 ('Andrew', 'Liu', 'andrew.liu@medicineinc.com', 'SCM Manager', 150000, '2020-06-12', 100006),
@@ -119,3 +119,57 @@ values
 ('Timothy', 'Yang', 'timothy.yang@healthyllc.com', 'Nutrition Associate', '89000', '2014-06-01', 100008),
 ('Phillip', 'Lee', 'phillip.lee@yottabyteinc.com', 'Senior Programmer', '137500', '2005-09-14', 100004),
 ('Brenda', 'Nguyen', 'brenda.nguyen@securitiesinc.com', 'Junior Analyst', '53000', '2021-03-15', 100003) ;
+
+### Insert college_dml command into mySQL workbench.
+create table college
+(college_id int(12) auto_increment, 
+college_name varchar(200), 
+city varchar(100), 
+state varchar(200),
+primary key (college_id),
+unique key (college_name))
+ENGINE = InnoDB AUTO_INCREMENT=101 DEFAULT CHARSET=utf8;
+
+### Insert interests_dml command into mySQL workbench.
+create table interests
+(interest_id int(12) auto_increment, 
+interest_name varchar(200), 
+description varchar(200),
+primary key (interest_id),
+unique key (interest_name))
+ENGINE = InnoDB AUTO_INCREMENT=1001 DEFAULT CHARSET=utf8;
+
+### Insert alumni_dml command into mySQL workbench.
+create table alumni
+(alumni_id int(12) auto_increment, 
+first_name varchar(50), 
+last_name varchar(50), 
+major varchar(200), 
+class varchar(25), 
+contact_consent int(4), 
+interest_id int(12),
+college_id int(12),
+primary key (alumni_id),
+constraint foreign key (interest_id) references interests (interest_id),
+constraint foreign key (college_id) references college (college_id))
+ENGINE = InnoDB AUTO_INCREMENT=1001 DEFAULT CHARSET=utf8;
+
+### Insert contact_dml command into mySQL workbench.
+create table contact
+(contact_id int(12) auto_increment,
+email varchar(200), 
+phone_number varchar(200), 
+social_media varchar(200),
+alumni_id int(12),
+primary key (contact_id),
+constraint foreign key (alumni_id) references alumni(alumni_id))
+ENGINE = InnoDB AUTO_INCREMENT=1001 DEFAULT CHARSET=utf8;
+
+### Insert alumni_employee_link_dml command into mySQL workbench.
+create table alumni_employee_link
+(alumni_id int(12),
+employee_id int(12), 
+primary key (alumni_id, employee_id),
+constraint foreign key (alumni_id) references alumni(alumni_id),
+constraint foreign key (employee_id) references employee(employee_id))
+ENGINE = InnoDB AUTO_INCREMENT=1001 DEFAULT CHARSET=utf8;
