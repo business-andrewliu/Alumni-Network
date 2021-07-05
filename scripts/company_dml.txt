@@ -1,0 +1,12 @@
+insert into company (company_name, city, state, industry_id)
+values
+('Airspace Corp', 'Austin', 'TX', 1),
+('Pharma Corp', 'Boston', 'MA', 2),
+('Securities Inc.', 'New York', 'NY', 3),
+('Yottabyte Inc.', 'San Francisco','CA', 5),
+('Orange LLC', 'Palo Alto', 'CA', 5),
+('Medicine Inc', 'San Diego', 'CA', 4),
+('Investments LLC', 'New York', 'NY', 3),
+('Healthy LLC', 'Austin', 'TX', 4),
+('Satellites Corp', 'Houston', 'TX', 1),
+('DNA Inc', 'San Diego', 'CA', 2);

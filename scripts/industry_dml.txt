@@ -1,0 +1,6 @@
+insert into industry (industry_name)
+values ('Aerospace'),
+('Biotech'),
+('Finance'),
+('Health Care'),
+('IT');

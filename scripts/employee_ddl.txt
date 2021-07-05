@@ -1,0 +1,15 @@
+create table employee
+(employee_id int(10) auto_increment,
+first_name varchar(200),
+last_name varchar(200),
+email varchar (200),
+title varchar (200),
+salary float(10),
+date_of_hire date,
+manager_id int(10),
+company_id int (6),
+primary key (employee_id),
+unique key (email),
+constraint foreign key (company_id) references company (company_id),
+constraint foreign key (manager_id) references employee (employee_id))
+ENGINE = InnoDB AUTO_INCREMENT=1000000001 DEFAULT CHARSET=utf8;

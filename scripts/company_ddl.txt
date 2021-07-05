@@ -1,0 +1,11 @@
+create table company
+(company_id int(6) auto_increment,
+company_name varchar(200),
+city varchar(200),
+state varchar(200),
+industry_id int(3),
+primary key (company_id),
+constraint foreign key (industry_id) references industry (industry_id))
+ENGINE = InnoDB AUTO_INCREMENT=100001 DEFAULT CHARSET=utf8;
+
+alter table company add unique key (company_name);
