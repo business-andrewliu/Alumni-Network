@@ -12,7 +12,7 @@ The idea behind this project is to build an alumni career development community 
 
 <!--Alumni Career Community (./Alumni%20Project-Context%20diagrams.png) -->
 
-![Alumni Career Community Use Cases](Alumni%20Project-Use%20Cases.png)
+![Alumni Career Community Use Cases](diagrams/Alumni%20Project-Use%20Cases.png)
 
 This envisioned alumni career community is online.  Alumni register with the community app portal. After the registration, alumni can search by industry, by company, by school, or by year. Alumni can then connect with each other. Community activities happen off the portal with preferred channels such as SLACK and Microsoft Teams.  
 
@@ -20,12 +20,12 @@ The app portal is deployed to public cloud. It is maintained by a site administr
 
 ## Solution Summary
 This portal application has a UX layer, a service layer, and a database layer.  
-![Alumni Career Community Context](Alumni%20Project-Context%20diagrams.png)
+![Alumni Career Community Context](diagrams/Alumni%20Project-Context%20diagrams.png)
 The UI portal is single page app to be built on a JavaScript framework.  
 The service layer is comprised of micro-services that connect the UI with the databases. 
 
 The database design is the following. 
-![Alumni Career Community Database](Alumni%20Project-data%20model.png)
+![Alumni Career Community Database](diagrams/Alumni%20Project-data%20model.png)
 
 ## Implementation
 
