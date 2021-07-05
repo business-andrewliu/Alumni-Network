@@ -28,4 +28,4 @@ The database design is the following.
 ![Alumni Career Community Database](Alumni%20Project-data%20model.png)
 
 ## Implementation
-
+industry_ddl.txt
