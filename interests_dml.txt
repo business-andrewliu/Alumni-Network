@@ -1,7 +1,0 @@
-insert into interests (interest_name, description)
-values
-('computer science', 'Java, C++, r, Python, SQL'),
-('engineering', 'designing and building technology'),
-('business', 'financial, entrepreneurial, management'),
-('medicine', 'healthcare, lifestyle'),
-('social science', 'psychology, sociology');
