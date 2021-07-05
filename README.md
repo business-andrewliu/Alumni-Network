@@ -19,7 +19,7 @@ This envisioned alumni career community is online.  Alumni register with the com
 The app portal is deployed to public cloud. It is maintained by a site administrator. A simple FAQ bot is setup to handle the routine questions.  
 
 ## Solution Summary
-This portal application has a UI layer, a service layer, and a database layer.  
+This portal application has a UX layer, a service layer, and a database layer.  
 ![Alumni Career Community Context](Alumni%20Project-Context%20diagrams.png)
 The UI portal is single page app to be built on a JavaScript framework.  
 The service layer is comprised of microservices that connect the UI with the databases. 
