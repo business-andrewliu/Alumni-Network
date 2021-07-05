@@ -17,6 +17,7 @@ The idea behind this project is to build an alumni career development community 
 ![Alumni Career Community Use Cases](Alumni%20Project-Use%20Cases.png)
 
 This envisioned alumni career community is online.  Alumni register with the community app portal. After the registration, alumni can search by industry, by company, by school, or by year. Alumni can then connect with each other. Community activities happen off the portal with preferred channels such as SLACK and Microsoft Teams.  
+
 The app portal is deployed to public cloud. It is maintained by a site administrator. A simple FAQ bot is setup to handle the routine questions.  
 
 ## Solution Summary
