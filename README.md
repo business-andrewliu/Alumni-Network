@@ -26,7 +26,7 @@ The UI portal is single page app to be built on JavaScript framework.
 The service layer are microservices that connects the UI with the databases. 
 
 The database design is the following. 
-![Alumni Career Community Database](Alumni%20Project-data modeling.png)
+![Alumni Career Community Database](Alumni%20Project-data%20modeling.png)
 
 ......  add detailed definition of each table......
 
