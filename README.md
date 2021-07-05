@@ -29,7 +29,7 @@ The service layer is comprised of microservices that connect the UI with the dat
 The database design is the following. 
 ![Alumni Career Community Database](Alumni%20Project-data%20modeling.png)
 
-......  add detailed definition of each table......
+......  add detailed definition of each table.....
 
 ## Implementation
 Query 1
