@@ -1,8 +1,6 @@
 # Alumni-Network
 This network is designed to help alumni stay connected after graduation. 
 
-# Alumni Career Community
-
 ## Why
 
 2020 was an eventful year. I graduated from the UCSD in the midst of Covid-19. To keep my career growing and continue my learning, I constructed this project as a way to help my alumni network stay in touch using a few of the skills I learned this past year. 
