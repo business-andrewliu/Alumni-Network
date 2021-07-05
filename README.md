@@ -29,6 +29,7 @@ The database design is the following.
 
 ## Implementation
 
+### Insert industry_ddl query into mySQL workbench.
 create table industry
 (industry_id int(12) auto_increment,
 industry_name varchar(200),
@@ -37,6 +38,8 @@ ENGINE = InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
 alter table industry add unique key (industry_name) ;
 
+
+### Insert industry_dml query into mySQL workbench.
 insert into industry (industry_name)
 values ('Aerospace'),
 ('Biotech'),
@@ -44,6 +47,7 @@ values ('Aerospace'),
 ('Health Care'),
 ('IT');
 
+### Insert company_ddl query into mySQL workbench.
 create table company
 (company_id int(6) auto_increment,
 company_name varchar(200),
@@ -56,6 +60,7 @@ ENGINE = InnoDB AUTO_INCREMENT=100001 DEFAULT CHARSET=utf8;
 
 alter table company add unique key (company_name);
 
+### Insert company_dml query into mySQL workbench.
 insert into company (company_name, city, state, industry_id)
 values
 ('Airspace Corp', 'Austin', 'TX', 1),
@@ -69,6 +74,7 @@ values
 ('Satellites Corp', 'Houston', 'TX', 1),
 ('DNA Inc', 'San Diego', 'CA', 2);
 
+### Insert employee_ddl query into mySQL workbench.
 create table employee
 (employee_id int(10) auto_increment,
 first_name varchar(200),
@@ -85,6 +91,7 @@ constraint foreign key (company_id) references company (company_id),
 constraint foreign key (manager_id) references employee (employee_id))
 ENGINE = InnoDB AUTO_INCREMENT=1000000001 DEFAULT CHARSET=utf8;
 
+### Insert employee_dml query into mySQL workbench.
 insert into employee (first_name, last_name, email, title, salary, date_of_hire, company_id)
 values
 ('Andrew', 'Liu', 'andrew.liu@medicineinc.com', 'SCM Manager', 150000, '2020-06-12', 100006),
@@ -112,5 +119,3 @@ values
 ('Timothy', 'Yang', 'timothy.yang@healthyllc.com', 'Nutrition Associate', '89000', '2014-06-01', 100008),
 ('Phillip', 'Lee', 'phillip.lee@yottabyteinc.com', 'Senior Programmer', '137500', '2005-09-14', 100004),
 ('Brenda', 'Nguyen', 'brenda.nguyen@securitiesinc.com', 'Junior Analyst', '53000', '2021-03-15', 100003) ;
-
-
