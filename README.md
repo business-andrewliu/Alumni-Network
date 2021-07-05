@@ -130,6 +130,19 @@ primary key (college_id),
 unique key (college_name))
 ENGINE = InnoDB AUTO_INCREMENT=101 DEFAULT CHARSET=utf8;
 
+### Insert college_dml command into mySQL workbench.
+insert into college (college_name, city, state)
+values
+('University of California, Berkeley', 'Berkeley', 'CA'),
+('University of California, Davis', 'Davis', 'CA'),
+('University of California, Irvine', 'Irvine', 'CA'),
+('University of California, Los Angeles', 'Los Angeles', 'CA'),
+('University of California, Merced', 'Merced', 'CA'),
+('University of California, Riverside', 'Riverside', 'CA'),
+('University of California, San Diego', 'La Jolla', 'CA'),
+('University of California, Santa Barbara', 'Santa Barbara', 'CA'),
+('University of California, Santa Cruz', 'Santa Cruz', 'CA');
+
 ### Insert interests_dml command into mySQL workbench.
 create table interests
 (interest_id int(12) auto_increment, 
