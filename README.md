@@ -91,7 +91,7 @@ constraint foreign key (company_id) references company (company_id),
 constraint foreign key (manager_id) references employee (employee_id))
 ENGINE = InnoDB AUTO_INCREMENT=1000000001 DEFAULT CHARSET=utf8;
 
-### Insert employee_dml query into mySQL workbench.
+### <u> Insert employee_dml query into mySQL workbench.
 insert into employee (first_name, last_name, email, title, salary, date_of_hire, company_id)
 values
 ('Andrew', 'Liu', 'andrew.liu@medicineinc.com', 'SCM Manager', 150000, '2020-06-12', 100006),
