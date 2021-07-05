@@ -5,10 +5,9 @@ This network is designed to help alumni stay connected after graduation.
 
 2020 was an eventful year. I graduated from the UCSD in the midst of Covid-19. To keep my career growing and continue my learning, I constructed this project as a way to help my alumni network stay in touch using a few of the skills I learned this past year. 
 
-
 ## What
 
-The idea behind this project is to build an alumni career development community that connects alumni across different companies and industries. The services, after they are built, are intended to help alumni connect with a community, search the directory, and connect with each other.
+The idea behind this project is to build an alumni career development community that connects alumni across different companies and industries. The services, after they are built, are intended to help alumni connect with a community, search the directory, and connect with each other. This network is designed to be a solution for alumni who graduated from a specific university to be able to connect with other alumni from the same university. This network has competitive advantage over networks such as LinkedIn. Unlike LinkedIn, this network has a focused and clear functionality of connecting alumni with the same alma mater. Data is collected from users who provide consent and is input into Tableau to illustrate enrollment, registration, and employemnt trends. 
 
 <!--Alumni Career Community (./Alumni%20Project-Context%20diagrams.png) -->
 
