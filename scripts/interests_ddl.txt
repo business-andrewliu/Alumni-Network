@@ -1,0 +1,7 @@
+create table interests
+(interest_id int(12) auto_increment,
+interest_name varchar(200),
+description varchar(200),
+primary key (interest_id),
+unique key (interest_name))
+ENGINE = InnoDB AUTO_INCREMENT=1001 DEFAULT CHARSET=utf8;

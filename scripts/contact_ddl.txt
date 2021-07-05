@@ -1,0 +1,9 @@
+create table contact
+(contact_id int(12) auto_increment,
+email varchar(200),
+phone_number varchar(200),
+social_media varchar(200),
+alumni_id int(12),
+primary key (contact_id),
+constraint foreign key (alumni_id) references alumni(alumni_id))
+ENGINE = InnoDB AUTO_INCREMENT=1001 DEFAULT CHARSET=utf8;

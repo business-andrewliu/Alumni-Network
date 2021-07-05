@@ -1,0 +1,8 @@
+create table college
+(college_id int(12) auto_increment,
+college_name varchar(200),
+city varchar(100),
+state varchar(200),
+primary key (college_id),
+unique key (college_name))
+ENGINE = InnoDB AUTO_INCREMENT=101 DEFAULT CHARSET=utf8;

@@ -1,0 +1,7 @@
+create table alumni_employee_link
+(alumni_id int(12),
+employee_id int(12),
+primary key (alumni_id, employee_id),
+constraint foreign key (alumni_id) references alumni(alumni_id),
+constraint foreign key (employee_id) references employee(employee_id))
+ENGINE = InnoDB AUTO_INCREMENT=1001 DEFAULT CHARSET=utf8; 

@@ -1,0 +1,13 @@
+create table alumni
+(alumni_id int(12) auto_increment,
+first_name varchar(50),
+last_name varchar(50),
+major varchar(200),
+class varchar(25),
+contact_consent int(4),
+interest_id int(12),
+college_id int(12),
+primary key (alumni_id),
+constraint foreign key (interest_id) references interests (interest_id),
+constraint foreign key (college_id) references college (college_id))
+ENGINE = InnoDB AUTO_INCREMENT=1001 DEFAULT CHARSET=utf8;
