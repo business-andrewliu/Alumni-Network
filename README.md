@@ -10,7 +10,7 @@ This network is designed to help alumni stay connected after graduation.
 
 ## What
 
-The gist of this project is to build an alumni career development community, that connects alumni across different companies and industries. The services, after they are built, are intented to help alumni connect with a community (insert employee, email, etc), search the directory by employee, company, or industry and connect with each other.
+The idea behind this project is to build an alumni career development community that connects alumni across different companies and industries. The services, after they are built, are intended to help alumni connect with a community, search the directory by employee, company, or industry, and connect with each other.
 
 <!--Alumni Career Community (./Alumni%20Project-Context%20diagrams.png) -->
 
