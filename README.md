@@ -167,7 +167,7 @@ unique key (interest_name))
 ENGINE = InnoDB AUTO_INCREMENT=1001 DEFAULT CHARSET=utf8;
 ```
 
-### Input interests_ddl command into mySQL workbench.
+### Input interests_dml command into mySQL workbench.
 ```
 insert into interests (interest_name, description)
 values
