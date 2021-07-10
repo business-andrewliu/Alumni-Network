@@ -196,6 +196,36 @@ constraint foreign key (college_id) references college (college_id))
 ENGINE = InnoDB AUTO_INCREMENT=1001 DEFAULT CHARSET=utf8;
 ```
 
+### Input alumni_dml command into mySQL workbench. 
+```
+insert into alumni (first_name, last_name, major, class, contact_consent, interest_id, college_id)
+values
+('John', 'Kim', 'Biology', '2018', '1', '1006', '101'),
+('Ben', 'Edwards', 'Finance', '2010', '0', '1003', '104'),
+('Melinda', 'Wang', 'Global Health', '2009', '1', '1006', '103'),
+('Kevin', 'Nguyen', 'Biochemistry', '2015', '1', '1004', '106'),
+('Tim', 'Lee', 'Computer Science', '2003', '0', '1001', '101'),
+('James', 'Lee', 'Biology', '2019', '1', '1006', '108'),
+('Tim', 'Johnson', 'Accounting', '2006', '1', '1003', '103'),
+('David', 'Wang', 'Mechanical Engineering', '2003', '0', '1002', '101'),
+('Tim', 'Wang', 'Aerospace Engineering', '2007', '0', '1002', '109'),
+('John', 'Liu', 'Cognitive Science', '2017', '1', '1001', '107'),
+('Sarah', 'Kim', 'Economics', '2019', '1', '1005', '104'),
+('Edward', 'Liang','Chemistry', '2003', '1', '1004', '107'),
+('Tom', 'Edwards', 'Nutritional Health', '2007', '1', '1004', '103'),
+('Jane', 'Lee', 'Biology', '2010', '1', '1004', '105'),
+('Richard', 'Jung', 'Biophysics', '2017', '1', '1006', '102'),
+('George', 'Leung', 'Electrical Engineering', '2010', '1', '1002', '106'),
+('Zack', 'Cheng', 'Management Science', '2015', '1', '1005', '107'),
+('Henry', 'Johnson', 'Electrical Engineering', '2013', '0', '1002', '105'),
+('Robert','Kim', 'Chemistry', '2020', '1', '1006', '109'),
+('Wendy', 'Leung', 'Industrial Engineering', '2018', '1', '1002', '101'),
+('George', 'Yang', 'Aerospace Engineering', '2002', '0', '1002', '102'),
+('Timothy', 'Yang', 'Pre-Health', '2013', '1', '1004', '104'),
+('Phillip', 'Lee', 'Computer Science', '1999', '0', '1001', '107'),
+('Brenda', 'Nguyen', 'Economics', '2021', '1', '1006', '103');
+```
+
 ### Input contact_ddl command into mySQL workbench.
 ```
 create table contact
